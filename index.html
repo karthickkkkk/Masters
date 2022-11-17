@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- META DATA -->
+<meta name="ad.size" content="width=300,height=250">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ALWAYS HTTPS LINKS TO ANY JS OR GOOGLE FONT FILES -->
+<script src="https://s0.2mdn.net/ads/studio/cached_libs/gsap_3.2.4_min.js"></script>
+
+<!-- ADD TITLE -->
+<title>300x250</title>
+<script type="text/javascript">
+    var clickTag = "https://www.prudential.com/";
+</script>
+
+<style type="text/css">
+/* RESET CSS */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+margin: 0; padding: 0; border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+
+/* NOW ADD YOUR CSS */
+#container { position: relative; top: 0px; left: 0px; width: 300px; height: 250px; overflow: hidden; background-color: #ffffff; cursor: pointer; }
+#border { position: absolute; width: 300px; height: 250px; top: 0px; left: 0px; border:1px solid #000; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+
+
+.abs0 { position: absolute; top: 0; left: 0; width: 300px; height: 250px; opacity: 0}
+.abs1 { position: absolute; top: 0; left: 0; width: 300px; height: 250px; opacity: 1}
+.copy1{transform-origin: 151px 127px; transform: scale(0);}
+.copy2{transform-origin: 84px 127px; transform: scale(0);}
+.copy3{transform-origin: 84px 127px; transform: scale(0);}
+.copy4{transform-origin: 150px 125px; transform: scale(0);}
+.copy_partner{transform-origin: 110px 43px; transform: scale(0);}
+.link_copy{transform-origin: 100px 150px; transform: scale(0);}
+
+
+.logo{transform-origin: 122px 93px; transform: scale(0);}
+.cta{transform-origin: 88px 200px; transform: scale(0);}
+
+.disclosureContainer {
+    position: absolute;
+    bottom: 0;
+    width: 300px;
+    height: 250px;
+    background-color: #d3d4d5;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/* .disclosure, .close { transform: translateY(100px); } */
+.com{position: absolute;}
+#scrollp{width: 100%;height: 250px;bottom: 0px;background-image: url('scrollbg.png');background-repeat: no-repeat;background-size: cover; transform: translateY(100%);transition: all 0.5s; }
+#scrollwrap{
+    width: 300px;
+    left: -8px;
+    bottom: -33px;
+    height: 276px;
+  }
+#scrollbar{width: 7px;    height: 68px;    background: #ffffff;    right: 10px;    top: 26px;border-radius: 5px;}
+#scrollbutton{width: 100%;height: auto;}
+#close{    width: 17px;    height: 17px;    right: 21px;    top: 7px;}
+#view {
+    width: 93px;
+    height: 15px;
+    bottom: 8px;
+    left: 20px;
+    display: none;
+}
+.scrolltxt{width: 300px;height: auto;}
+.disclosure { opacity: 0; }
+.linkcopy { opacity: 0; }
+/* .view { position: absolute; bottom: 2px; left: 3px; width: 120px; height: 20px; cursor: pointer; display: none;}
+.close { position: absolute; top: 165px; left: 270px; width: 15px; height: 12px; opacity: 1; cursor: pointer; padding: 5px; visibility: hidden; } */
+
+</style>
+</head>
+
+<body>
+<div id="container">
+<a href="#" onclick="window.open(window.clickTag)">
+  <img src="bg.jpg" class="abs1 bg" alt=""/>
+
+  <img src="img3.jpg" class="abs1 img3" alt=""/>
+  <img src="copy3.png" class="abs1 copy3" alt=""/>
+
+  <img src="img2.jpg" class="abs1 img2" alt=""/>
+  <img src="copy2.png" class="abs1 copy2" alt=""/>
+
+  <img src="img1.jpg" class="abs1 img1" alt=""/>
+  <img src="copy1.png" class="abs1 copy1" alt=""/>
+
+
+  <img src="logo.png" class="abs1 logo" alt=""/>
+  <img src="logo_white.png" class="abs1 logo_white" alt=""/>
+
+  <img src="copy4.png" class="abs1 copy4" alt=""/>
+  <img src="copy_partner.png" class="abs1 copy_partner" alt=""/>
+  <img src="link_copy.png" class="abs1 link_copy" alt=""/>
+  <img src="desc_copy.png" class="abs0 desc_copy" alt=""/>
+
+  <img src="shape.png" class="abs1 shape" alt=""/>
+
+  <img src="cta.png" class="abs1 cta" alt=""/>
+  <!-- <img class="abs1 linkcopy" src="linkcopy.png"/> -->
+  <!-- <img class="abs0 disclosure" src="disclosure.png"/> -->
+  <div id="border"></div>
+</a>
+
+  <!-- disclosure -->
+  <div id="view" class="view com" style="display: block;"></div>
+          <div id='scrollp' class='scrollp com disclosureContainer' draggable="false">
+              <div id='scrollwrap' class='scrollwrap com'><img id='scrolltxt' class='scrolltxt com' src='scrolltxt.png'></div>
+              <img src="close_btn.png" class="abs1 close_btn" alt=""/>
+              <!-- <div id='scrollbar' class='scrollbar com'><img id='scrollbutton' class='scrollbutton com' src='scrollbutton.png' draggable='false'></div> -->
+              <div id='close' class='close com'></div>
+          </div>
+  </div>
+
+</div>
+<!-- <img src="test.gif" width="300px" height="250px" style="position:absolute; top:0; left:360px" /> -->
+<script>
+
+  // dom install
+  var DOMReady = function(a,b,c){b=document,c='addEventListener';b[c]?b[c]('DOMContentLoaded',a):window.attachEvent('onload',a)}
+
+
+  // is dom ready
+  DOMReady(function() {
+     animation()
+  });
+
+  // BEGIN THE GREENSOCK ANIMATION
+
+  function master() {
+        var timers = 0.15;
+        var add = 1;
+        var t1 = gsap.timeline();
+        t1
+        .to(".img1",{ duration: 5, scale:2.5, ease: "power2.out" }, "One+=0.2")
+        .to(".img1",{ duration: 3, scale:2.5, ease: "none" }, "One+=0.5")
+        .to(".copy1",{ duration: 0.3, scale:1, ease: "Cubic.easeIn" }, "One+=0.3")
+        .to(".img1",{ duration: 0.3, opacity:0, scale:6, ease: "none" }, "One+=2.8")
+        .to(".copy1",{ duration: 0.3,  opacity:0, scale:6, x:150,y:"40%", ease: "Cubic.easeIn" }, "One+=2.8")
+
+        .to(".img2",{ duration: 5, scale:2.5, ease: "power2.out" }, "One+=2.8")
+        .to(".img2",{ duration: 3, scale:2.5, ease: "none" }, "One+=3.1")
+        .to(".copy2",{ duration: 0.3, scale:1, ease: "Cubic.easeIn" }, "One+=2.9")
+        .to(".img2",{ duration: 0.3, opacity:0, scale:6, ease: "none" }, "One+=5.4")
+        .to(".copy2",{ duration: 0.3,  opacity:0, scale:6, x:150,y:"40%", ease: "Cubic.easeIn" }, "One+=5.4")
+
+        .to(".img3",{ duration: 5, scale:2.5, ease: "power2.out" }, "One+=5.4")
+        .to(".img3",{ duration: 3, scale:2.5, ease: "none" }, "One+=5.7")
+        .to(".copy3",{ duration: 0.3, scale:1, ease: "Cubic.easeIn" }, "One+=5.5")
+        .to(".img3",{ duration: 0.3, opacity:0, scale:6, ease: "none" }, "One+=8")
+        .to(".copy3",{ duration: 0.3,  opacity:0, scale:6, x:150,y:"40%", ease: "Cubic.easeIn" }, "One+=8")
+
+        .to(".logo_white",{ duration: 0.3,  opacity:0, ease: "none" }, "One+=8")
+        .to(".copy4",{ duration: 0.6,  scale:1, ease: "none" }, "One+=8.5")
+        .to(".copy4",{ duration: 0.3, opacity:0,  scale:6, ease: "Cubic.easeIn" }, "One+=10.2")
+        // .to(".copy4",{ duration: 0.5, opacity:0,  scale:6, ease: "power2.out" }, "One+=11.8")
+
+        .to(".desc_copy",{ duration: 0.8,  opacity:1, ease: "power2.out" }, "Two-=0.2")
+        .to(".copy_partner",{ duration: 0.8,  scale:1, ease: "power2.out" }, "Two+=0")
+        .to(".cta",{ duration: 0.8,  scale:1, ease: "power2.out" }, "Two+=0")
+        .to(".logo",{ duration: 0.8,  scale:1, ease: "power2.out" }, "Two+=0.5")
+        .to(".link_copy",{ duration: 0.8,  scale:1, ease: "power2.out" }, "Two+=0.5")
+        .from(".shape",{ duration: 0.8,  x:100,y:100, ease: "power2.out" }, "Two+=1.7");
+
+        console.info('Total times: '+timers);
+        			setTimeout(function(){
+        							var container = document.getElementById("container");
+        							var cta = document.getElementById("cta");
+                      container.addEventListener("mouseenter", mouseEnter);
+                      container.addEventListener("mouseleave", mouseLeave);
+
+                      function mouseEnter() {
+                      var t2 = new TimelineMax();
+			                     var timers1 = 0;
+                           t2.to('.cta',0.2,{scale:1.03, ease: Power0.easeOut}, timers1);
+                      }
+                      function mouseLeave() {
+                          var t4 = new TimelineMax();
+                					var timers2 = 0;
+                					t4.to('.cta',0.2,{scale:1, ease: Power0.easeOut}, timers2);
+                      }
+        				}, 14000);
+
+
+
+        console.log(t1.duration())
+        return t1;
+  }
+
+  function animation() {
+      var t1 = new TimelineMax();
+          t1.add(master(), 0);
+
+          /*disclosure Don't edit code*/
+            var view = document.getElementById('view');
+            var close = document.getElementById('close');
+            view.addEventListener("click", opendis);
+            close.addEventListener("click", closedis);
+
+            function opendis(){
+              TweenMax.to('.scrollp', { duration: 0.3, y:0, ease: "power4.out"});
+            }
+
+            function closedis(){
+              TweenMax.to('.scrollp', { duration: 0.3, y: 250, ease: "power4.out"}, 0);
+            }
+      }
+
+
+
+
+</script>
+</body>
+</html>
